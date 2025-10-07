@@ -23,29 +23,31 @@ Desenvolvido em Node.js, o backend é responsável por toda a lógica de negóci
 
 - **Rotas**: O backend gerencia as seguintes rotas e requisições:
 
-- **Home**: Informações gerais do sistema.
+  - **Home**: Informações gerais do sistema.
 
-- **Planos**: Gestão de planos de membresia.
+  - **Planos**: Gestão de planos de membresia.
+  
+  - **Treinos**: Gestão de treinos personalizados para os usuários.
+  
+  - **Sobre**: Informações sobre o projeto.
+  
+  - **Contato**: Formulário de contato para comunicação.
+  
+  - **Login**: Autenticação de usuários.
 
-- **Treinos**: Gestão de treinos personalizados para os usuários.
+- **Segurança**: A rota de login utiliza JWT (JSON Web Token) para criptografia e autenticação, garantindo a segurança das informações do usuário. A senha é criptografada com bcrypt.
 
-- **Sobre**: Informações sobre o projeto.
+- **CRUD**: O sistema possui funcionalidades de CRUD (Create, Read, Update, Delete) para gerenciar planos e treinos, permitindo a personalização completa para cada usuário.
 
-- **Contato**: Formulário de contato para comunicação.
+---
 
-- **Login**: Autenticação de usuários.
-
-Segurança: A rota de login utiliza JWT (JSON Web Token) para criptografia e autenticação, garantindo a segurança das informações do usuário. A senha é criptografada com bcrypt.
-
-CRUD: O sistema possui funcionalidades de CRUD (Create, Read, Update, Delete) para gerenciar planos e treinos, permitindo a personalização completa para cada usuário.
-
-**Frontend 💻**
+### **Frontend 💻**
 
 Construído com React + Vite, o frontend é a interface com o usuário. Cada componente foi criado de forma modular, permitindo um desenvolvimento ágil e organizado.
 
-Componentização: O frontend é composto pelos componentes Home, Planos, Treinos, Sobre, Contato e Login, seguindo uma estrutura clara e coesa.
+- **Componentização**: O frontend é composto pelos componentes Home, Planos, Treinos, Sobre, Contato e Login, seguindo uma estrutura clara e coesa.
 
-Estilização: O design do projeto foi feito utilizando Tailwind CSS, o que possibilitou a criação de um layout moderno e responsivo.
+- **Estilização**: O design do projeto foi feito utilizando Tailwind CSS, o que possibilitou a criação de um layout moderno e responsivo.
 
-Dados Mockados: Para fins de demonstração e desenvolvimento, foi utilizado um arquivo .json como banco de dados simulado.
+- **Dados Mockados**: Para fins de demonstração e desenvolvimento, foi utilizado um arquivo .json como banco de dados simulado.
 
