@@ -13,33 +13,33 @@ Este projeto foi desenvolvido pelo Nexus Group da Academia Inteligente, com o ob
 
 O tema do projeto é uma Academia Inteligente, e o trabalho foi desenvolvido seguindo a estrutura de pastas e os requisitos de código apresentados em sala de aula.
 
-**Funcionalidades e Escopo do Projeto**
+## **Funcionalidades e Escopo do Projeto**
 
 O projeto consiste em um sistema completo, dividido em backend e frontend, com as seguintes funcionalidades:
 
-**Backend**
+### **Backend 💾**
 
 Desenvolvido em Node.js, o backend é responsável por toda a lógica de negócio e manipulação de dados. A estrutura de pastas foi organizada para facilitar a escalabilidade e manutenção.
 
-Rotas: O backend gerencia as seguintes rotas e requisições:
+- **Rotas**: O backend gerencia as seguintes rotas e requisições:
 
-Home: Informações gerais do sistema.
+- **Home**: Informações gerais do sistema.
 
-Planos: Gestão de planos de membresia.
+- **Planos**: Gestão de planos de membresia.
 
-Treinos: Gestão de treinos personalizados para os usuários.
+- **Treinos**: Gestão de treinos personalizados para os usuários.
 
-Sobre: Informações sobre o projeto.
+- **Sobre**: Informações sobre o projeto.
 
-Contato: Formulário de contato para comunicação.
+- **Contato**: Formulário de contato para comunicação.
 
-Login: Autenticação de usuários.
+- **Login**: Autenticação de usuários.
 
 Segurança: A rota de login utiliza JWT (JSON Web Token) para criptografia e autenticação, garantindo a segurança das informações do usuário. A senha é criptografada com bcrypt.
 
 CRUD: O sistema possui funcionalidades de CRUD (Create, Read, Update, Delete) para gerenciar planos e treinos, permitindo a personalização completa para cada usuário.
 
-**Frontend**
+**Frontend 💻**
 
 Construído com React + Vite, o frontend é a interface com o usuário. Cada componente foi criado de forma modular, permitindo um desenvolvimento ágil e organizado.
 
