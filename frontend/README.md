@@ -51,3 +51,6 @@ Construído com React + Vite, o frontend é a interface com o usuário. Cada com
 
 - **Dados Mockados**: Para fins de demonstração e desenvolvimento, foi utilizado um arquivo .json como banco de dados simulado.
 
+---
+
+> Criado pelo [Grupo Nexus](https://github.com/Nexus-Consulting-FIAP)
