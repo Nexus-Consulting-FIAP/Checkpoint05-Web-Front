@@ -23,17 +23,17 @@ Desenvolvido em Node.js, o backend é responsável por toda a lógica de negóci
 
 - **Rotas**: O backend gerencia as seguintes rotas e requisições:
 
-  - **Home**: Informações gerais do sistema.
+  - [x] **Home**: Informações gerais do sistema.
 
-  - **Planos**: Gestão de planos de membresia.
+  - [x] **Planos**: Gestão de planos de membresia.
   
-  - **Treinos**: Gestão de treinos personalizados para os usuários.
+  - [x] **Treinos**: Gestão de treinos personalizados para os usuários.
   
-  - **Sobre**: Informações sobre o projeto.
+  - [x] **Sobre**: Informações sobre o projeto.
   
-  - **Contato**: Formulário de contato para comunicação.
+  - [x] **Contato**: Formulário de contato para comunicação.
   
-  - **Login**: Autenticação de usuários.
+  - [x] **Login**: Autenticação de usuários.
 
 - **Segurança**: A rota de login utiliza JWT (JSON Web Token) para criptografia e autenticação, garantindo a segurança das informações do usuário. A senha é criptografada com bcrypt.
 
