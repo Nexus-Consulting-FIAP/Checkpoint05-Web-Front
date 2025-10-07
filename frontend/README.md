@@ -1,13 +1,14 @@
 # 🚀 Projeto Academia Inteligente – Checkpoint 05 
 **Integrantes**
+
 |Nome|RM|
 |--|--|
-|Daniel Oliveira de Souza | RM: 566284 |
-|Felipe Campos Vianna Peres | RM: 562752 |
-|João Pedro Raimundo Marcilio | RM: 561603 |
-|João Pedro Ribeiro Palermo | RM: 562077 |
-|Lucas de Almeida Pires | RM: 562757 |
-|Lucas Zanella Clemente | RM: 563880 |
+|[Lucas de Almeida Pires](https://github.com/LucasAllPires) | RM: 562757 |
+|[Daniel Oliveira de Souza](https://github.com/xdlimao) | RM: 566284 |
+|[João Pedro Raimundo Marcilio](https://github.com/Jonausss) | RM: 561603 |
+|[Lucas Zanella Clemente](https://github.com/LucasZanellaClemente) | RM: 563880 |
+|[João Pedro Ribeiro Palermo](https://github.com/jpPalermo) | RM: 562077 |
+|[Felipe Campos Vianna Peres](https://github.com/camp0s0s) | RM: 562752 |
 
 Este projeto foi desenvolvido pelo Nexus Group da Academia Inteligente, com o objetivo de criar uma solução inovadora que transforma a experiência de treino, tornando-a mais personalizada e eficiente.
 
@@ -45,11 +46,11 @@ Desenvolvido em Node.js, o backend é responsável por toda a lógica de negóci
 
 Construído com React + Vite, o frontend é a interface com o usuário. Cada componente foi criado de forma modular, permitindo um desenvolvimento ágil e organizado.
 
-- **Componentização**: O frontend é composto pelos componentes Home, Planos, Treinos, Sobre, Contato e Login, seguindo uma estrutura clara e coesa.
+- [x] **Componentização**: O frontend é composto pelos componentes Home, Planos, Treinos, Sobre, Contato e Login, seguindo uma estrutura clara e coesa.
 
-- **Estilização**: O design do projeto foi feito utilizando Tailwind CSS, o que possibilitou a criação de um layout moderno e responsivo.
+- [x] **Estilização**: O design do projeto foi feito utilizando Tailwind CSS, o que possibilitou a criação de um layout moderno e responsivo.
 
-- **Dados Mockados**: Para fins de demonstração e desenvolvimento, foi utilizado um arquivo .json como banco de dados simulado.
+- [x] **Dados Mockados**: Para fins de demonstração e desenvolvimento, foi utilizado um arquivo .json como banco de dados simulado.
 
 ---
 
