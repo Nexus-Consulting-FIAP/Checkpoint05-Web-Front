@@ -13,7 +13,7 @@ Este projeto foi desenvolvido pelo Nexus Group da Academia Inteligente, com o ob
 
 O tema do projeto é uma Academia Inteligente, e o trabalho foi desenvolvido seguindo a estrutura de pastas e os requisitos de código apresentados em sala de aula.
 
-## **Funcionalidades e Escopo do Projeto**
+## **Funcionalidades e Escopo do Projeto 📃**
 
 O projeto consiste em um sistema completo, dividido em backend e frontend, com as seguintes funcionalidades:
 
