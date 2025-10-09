@@ -54,4 +54,8 @@ Construído com React + Vite, o frontend é a interface com o usuário. Cada com
 
 ---
 
+Video de demonstração do site
+
+---
+
 > Criado pelo [Grupo Nexus](https://github.com/Nexus-Consulting-FIAP)
