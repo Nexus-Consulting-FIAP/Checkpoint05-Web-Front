@@ -4,7 +4,6 @@ import Header from '../components/Header'
 const sobre = () => {
   return (
     <div>
-      <Header />
       <h2>Nossos Locais</h2>
 
       <img src="" alt="imagem academia de moema" />

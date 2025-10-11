@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header"
+
 import Home from "./routes/Home";
 import Contato from "./routes/Contato";
 import Login from "./routes/Login";
@@ -11,6 +14,7 @@ import Cadastro from "./routes/Cadastro";
 const App = () => {
   return (
     <Router>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home />} />      {/* página inicial */}
         <Route path="/home" element={<Home />} />
