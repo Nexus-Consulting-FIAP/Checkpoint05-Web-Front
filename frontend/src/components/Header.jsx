@@ -14,6 +14,22 @@ const Header = () => {
     setShowProfilePopup(false)
   }
 
+  const getSubscriptionColor = (subscription) => {
+        if (!subscription) return 'text-white';
+
+        switch (subscription.toLowerCase()) {
+            case 'blue':
+                return 'text-white bg-cyan-500'; 
+            case 'orange':
+                return 'text-white bg-orange-400';
+            case 'black':
+                return 'text-white bg-zinc-900';
+            default:
+                return 'text-white';
+        }
+  };
+  const colorClass = getSubscriptionColor(userData.subscription)
+
   const togglePopup = () => {
     setShowProfilePopup(prev => !prev)
   }
@@ -53,7 +69,7 @@ const Header = () => {
           </button>
 
           {showProfilePopup && (
-            <div className="absolute right-0 top-full mt-2 ml-4 w-64 bg-zinc-800 text-white rounded-lg shadow-2xl overflow-hidden z-20 border border-cyan-500">
+            <div className="absolute right-0 top-full mt-2 mr-9 w-64 bg-zinc-800 text-white rounded-lg rounded-tr-none shadow-2xl overflow-hidden z-20 border border-cyan-500">
                 <div className="p-4 space-y-3">
                     <h3 className="text-xl font-bold text-cyan-400 border-b border-zinc-700 pb-2">
                         {userData.name || 'Nome do Usuário'}
@@ -63,7 +79,7 @@ const Header = () => {
                     </p>
                     <p className="text-sm">
                         <span className="font-semibold text-gray-400">Plano:</span> 
-                        <span className="ml-1 text-black bg-yellow-300 px-2 py-0.2 rounded-2xl font-bold uppercase">
+                        <span className={`ml-1 ${colorClass} px-2 py-0.2 rounded-2xl font-bold uppercase`}>
                             {userData.subscription || 'N/A'}
                         </span>
                     </p>
