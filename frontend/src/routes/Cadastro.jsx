@@ -91,6 +91,7 @@ function Cadastro() {
               Cadastrar
             </button>
           </form>
+          <p className='text-cyan-500 font-bold'>{message}</p>
         </div>
       </div>
     </div>
