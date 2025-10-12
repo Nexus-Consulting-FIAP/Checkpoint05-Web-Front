@@ -4,14 +4,14 @@
     "name": "a",
     "email": "a@a",
     "password": "$2b$10$auSO3EMb.d5wivdiusAdVevnNPfikushtDAal/y3ZjwvoBEtl0zxe",
-    "subscription": "free"
+    "subscription": "Black"
   },
   {
     "id": 1760230403671,
     "name": "b",
     "email": "b@b",
     "password": "$2b$10$PcU8KGLFzQPwgw7e7oTLROVMKWa3c0shqWkU2B3BKsd6bR4ao9rqq",
-    "subscription": "free"
+    "subscription": "Orange"
   },
   {
     "id": 1760231595864,

@@ -33,19 +33,17 @@
     }
   };
   const autenticateToken = (req, res, next) => {
-    // Pega o cabeçalho "Authorization" (ex: "Bearer <token>")
     const authHeader = req.get("authorization");
-    // Se existir, pega só o token
     const token = authHeader?.split(" ")[1];
 
-    if (!token) return res.sendStatus(401); // sem token
+    if (!token) return res.sendStatus(401);
 
     try {
-      const payload = jwt.verify(token, Secret_Key); // lança se inválido/expirado
+      const payload = jwt.verify(token, Secret_Key);
       req.user = payload;
       next();
     } catch (err) {
-      return res.sendStatus(403); // token inválido/expirado
+      return res.sendStatus(403);
     }
   };
 
@@ -96,6 +94,37 @@
     const token = jwt.sign({ id: user.id, email: user.email }, Secret_Key, { expiresIn: "10m" });
     return res.json({ message: "Login realizado com sucesso!", token, user: userPayload });
   });
+  app.post("/subscribe-plan", autenticateToken, (req, res) => {
+    const userId = req.user.id
+    const { subscription } = req.body
+
+    if (!subscription) {
+      return res.status(400).json({Message: "O nome do plano de assinatura é obrigatório"})
+    }
+
+    let users = consultUsers()
+    const userIndex = users.findIndex(u => u.id === userId)
+
+    const validSubscriptions = ['Blue', 'Orange', 'Black']
+    const subscriptionName = validSubscriptions.find(p => p.toLowerCase() === subscription.toLowerCase())
+
+    if (!subscriptionName) {
+      return res.status(400).json({message: "Plano de assinatura inválido"})
+    }
+
+    users[userIndex].subscription = subscriptionName
+
+    try {
+      saveUsers(users)
+      return res.status(200).json ({
+        message: `Plano de Assinatura ${subscriptionName} realizado com sucesso!`,
+        newSubscription: subscriptionName
+      })
+    } catch (error) {
+        console.error("Erro ao salvar a assinatura:", error)
+        return res.status(500).json({message: "Erro interno do servidor ao salvar dados."})
+    }
+  })
   app.get("/home", autenticateToken, (req, res) => {
     res.json({ message: "Acesso autorizado, Bem-vindo", user: req.user });
   });
