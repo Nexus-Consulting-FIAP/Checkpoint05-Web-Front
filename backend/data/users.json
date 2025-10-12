@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1760228294287,
+    "name": "a",
+    "email": "a@a",
+    "password": "$2b$10$auSO3EMb.d5wivdiusAdVevnNPfikushtDAal/y3ZjwvoBEtl0zxe",
+    "subscription": "free"
+  },
+  {
+    "id": 1760230403671,
+    "name": "b",
+    "email": "b@b",
+    "password": "$2b$10$PcU8KGLFzQPwgw7e7oTLROVMKWa3c0shqWkU2B3BKsd6bR4ao9rqq",
+    "subscription": "free"
+  },
+  {
+    "id": 1760231595864,
+    "name": "c",
+    "email": "c@c",
+    "password": "$2b$10$xHi2FVzON2CQYK55undaa.0tU.hO.Urmhfnvtp8mYmAkFeP.ecoDG",
+    "subscription": "free"
+  },
+  {
+    "id": 1760233090646,
+    "name": "Daniela",
+    "email": "daniela@gmail.com",
+    "password": "$2b$10$OBYY2T94IeFhDOH4cbL1/eej6W4zXxh4TN8e5nvOuKAC9Nv53Zpty",
+    "subscription": "free"
+  }
+]

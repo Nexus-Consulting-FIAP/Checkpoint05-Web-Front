@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-.section1-bg {
+.bg-home {
     background-image: url("../public/background-section1-home.png");
     background-size: cover;
 }

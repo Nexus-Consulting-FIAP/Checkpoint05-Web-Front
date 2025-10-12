@@ -1,11 +1,32 @@
-import React from 'react'
-import Header from '../components/Header'
+import { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+
+const API_URL = 'http://localhost:5001'
 
 function Cadastro() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [message, setMessage] = useState('')
+
+  const navigate = useNavigate()
+
+  const handleRegister = async(e) => {
+    e.preventDefault()
+    try {
+      const response = await axios.post(`${API_URL}/register`, {name, email, password})
+      setMessage(response.data.message)
+      setTimeout(() => navigate('/'), 2000)
+    } catch (error) {
+      setMessage(error.response.data.message || 'Erro ao registrar usuário')
+    }
+  }
+
   return (
-   <div className="min-h-screen bg-zinc-900 flex items-center justify-center p-4">
-      <div className="flex bg-zinc-800 rounded-lg shadow-lg overflow-hidden max-w-4xl w-full">
-        
+   <div className="min-h-screen bg-zinc-900 flex items-center justify-center">
+      <div className="flex bg-zinc-800 rounded-lg shadow-lg overflow-hidden mt-20 max-w-4xl w-full">
+
         {/* Lado Esquerdo - Imagem */}
         <div className="hidden md:block w-1/2">
           <img 
@@ -21,7 +42,7 @@ function Cadastro() {
             Cadastro
           </div>
 
-          <form className="mt-8 space-y-6">
+          <form className="mt-8 space-y-6" onSubmit={handleRegister}>
             <div>
               <label htmlFor="nome" className="block text-white text-lg font-medium mb-1">
                 Nome:
@@ -29,6 +50,8 @@ function Cadastro() {
               <input
                 type="text"
                 id="nome"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full bg-transparent border-b-2 border-gray-500 focus:border-cyan-500 outline-none text-white text-lg pb-1"
               />
             </div>
@@ -40,7 +63,10 @@ function Cadastro() {
               <input
                 type="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-transparent border-b-2 border-gray-500 focus:border-cyan-500 outline-none text-white text-lg pb-1"
+                required
               />
             </div>
 
@@ -50,8 +76,11 @@ function Cadastro() {
               </label>
               <input
                 type="password"
-                id="senha"
+                id="senha" 
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-transparent border-b-2 border-gray-500 focus:border-cyan-500 outline-none text-white text-lg pb-1"
+                required
               />
             </div>
 
