@@ -54,7 +54,36 @@ Construído com React + Vite, o frontend é a interface com o usuário. Cada com
 
 ---
 
-Video de demonstração do site
+## Visual do site
+
+### Home/Landing Page
+
+<img width="870" height="572" alt="image" src="https://github.com/user-attachments/assets/d2bcf104-c2d2-4d8e-9e7e-9e08b826953b" />
+
+### Planos
+
+<img width="870" height="572" alt="image" src="https://github.com/user-attachments/assets/7e0f2135-b739-4e78-8dcb-ac997ef8b141" />
+
+### Treinos/Aulas
+
+<img width="524" height="619" alt="image" src="https://github.com/user-attachments/assets/cbe090b6-e38d-4023-bddf-3c5cf60b679e" />
+
+### Sobre Nós
+
+<img width="641" height="606" alt="image" src="https://github.com/user-attachments/assets/5db5d2a8-c9c9-44ec-b094-c41d8a015a0b" />
+
+### Contato
+
+<img width="649" height="551" alt="image" src="https://github.com/user-attachments/assets/10b425ff-4c3c-4b1c-9cdf-4244c6de7b9a" />
+
+### Cadastro
+
+<img width="649" height="550" alt="image" src="https://github.com/user-attachments/assets/6d2d22d5-cea8-49e3-9bfd-1972e518929e" />
+
+### Login
+
+<img width="649" height="552" alt="image" src="https://github.com/user-attachments/assets/69375812-e0b7-45cc-af88-47da63885abd" />
+
 
 ---
 
